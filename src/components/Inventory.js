@@ -8,12 +8,12 @@ import base, { firebaseApp } from "../base";
 
 class Inventory extends React.Component {
   static propTypes = {
-    fishes: PropTypes.object,
-    addFish: PropTypes.func,
-    updateFish: PropTypes.func,
-    deleteFish: PropTypes.func,
-    loadSampleFishes: PropTypes.func,
-    storeId: PropTypes.string
+    fishes: PropTypes.object.isRequired,
+    addFish: PropTypes.func.isRequired,
+    updateFish: PropTypes.func.isRequired,
+    deleteFish: PropTypes.func.isRequired,
+    loadSampleFishes: PropTypes.func.isRequired,
+    storeId: PropTypes.string.isRequired
   };
 
   state = {

@@ -10,8 +10,8 @@ class Fish extends React.Component {
       desc: PropTypes.string,
       status: PropTypes.string,
       price: PropTypes.number
-    }),
-    addToOrder: PropTypes.func
+    }).isRequired,
+    addToOrder: PropTypes.func.isRequired
   };
 
   render() {
